@@ -1,0 +1,12 @@
+.players {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  bottom: 4rem;
+  left: 2rem;
+  width: 10rem;
+}
