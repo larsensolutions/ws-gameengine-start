@@ -1,12 +1,12 @@
 export interface GameState {
-  read: boolean;
+  ready: boolean;
 }
 
-export interface EngineParts {
+export interface EnginePart {
   start(): void;
-  stop(): void;
   pause(): void;
-  destrory(): void;
+  stop(): void;
+  destroy(): void;
 }
 
 export enum EngineState {
