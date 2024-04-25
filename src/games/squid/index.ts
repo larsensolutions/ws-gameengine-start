@@ -1,0 +1,1 @@
+export { SquidGame } from "./squid";

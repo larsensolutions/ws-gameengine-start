@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-import { PizzaGame } from "./games";
+import { PizzaGame, SquidGame } from "./games";
 import { Players } from "./games/pizza/status";
 import "./App.scss";
 import { GameEngine, GameState } from "./engine";
@@ -139,7 +139,7 @@ function App() {
           setTheGame(new PizzaGame(canvas.current));
           break;
         case GameTypes.SQUID:
-          /*    setTheGame(new SquidGame(canvas.current)); */
+          setTheGame(new SquidGame(canvas.current));
           break;
         default:
           break;
@@ -160,7 +160,7 @@ function App() {
           <img height='30%' src='/mongolide_joakim.gif' alt='logo' />
           <h1>Select game</h1>
           <button onClick={startNewGame(GameTypes.PIZZA)}>Pizza Game</button>
-          {/*  <button onClick={startNewGame(GameTypes.SQUID)}>Squid Game</button> */}
+          <button onClick={startNewGame(GameTypes.SQUID)}>Squid Game</button>
         </div>
       )}
 

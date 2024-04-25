@@ -1,2 +1,2 @@
 export { PizzaGame } from "./pizza";
-/* export { SquidGame } from "./squid"; */
+export { SquidGame } from "./squid";
